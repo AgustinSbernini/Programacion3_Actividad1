@@ -47,7 +47,9 @@
     <Compile Include="Docente.cs" />
     <Compile Include="Enumerados.cs" />
     <Compile Include="Estudiante.cs" />
+    <Compile Include="Examen.cs" />
     <Compile Include="Materia.cs" />
+    <Compile Include="MesaDeExamen.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Sysacad.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

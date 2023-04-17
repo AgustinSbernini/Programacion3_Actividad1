@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="BibliotecaSysacad.Carrera">
-    <Position X="0.5" Y="0.5" Width="2" />
+    <Position X="0.75" Y="0.5" Width="2" />
     <AssociationLine Name="Materia" Type="BibliotecaSysacad.Materia" FixedFromPoint="true">
       <Path>
-        <Point X="2.5" Y="1.812" />
-        <Point X="3.5" Y="1.812" />
+        <Point X="2.75" Y="1.812" />
+        <Point X="3.75" Y="1.812" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -17,7 +17,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="BibliotecaSysacad.Materia">
-    <Position X="3.5" Y="0.5" Width="1.5" />
+    <Position X="3.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAQAAAACAAAAIAAAAAAAAAAAAAAAAAIQAAAAAAAIAA=</HashCode>
       <FileName>Materia.cs</FileName>
@@ -29,12 +29,12 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="BibliotecaSysacad.Estudiante">
-    <Position X="6.75" Y="3.25" Width="1.75" />
+    <Position X="7" Y="5.25" Width="1.75" />
     <AssociationLine Name="Materia" Type="BibliotecaSysacad.Materia" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="7.187" Y="3.25" />
-        <Point X="7.187" Y="1.874" />
-        <Point X="5" Y="1.874" />
+        <Point X="7.437" Y="5.25" />
+        <Point X="7.437" Y="1.874" />
+        <Point X="5.25" Y="1.874" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="0.185" Y="0.06" />
@@ -49,14 +49,14 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="BibliotecaSysacad.Persona">
-    <Position X="8" Y="0.5" Width="1.5" />
+    <Position X="10.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAEAAAAgAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Persona.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BibliotecaSysacad.Docente">
-    <Position X="9.25" Y="3.25" Width="1.75" />
+    <Position X="12.25" Y="5.25" Width="1.75" />
     <AssociationLine Name="Materia" Type="BibliotecaSysacad.Materia">
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="0.035" Y="0.193" />
@@ -71,7 +71,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="BibliotecaSysacad.Comision">
-    <Position X="3.5" Y="3" Width="1.5" />
+    <Position X="4.5" Y="5.5" Width="1.5" />
     <AssociationLine Name="Turno" Type="Turno">
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="0.177" Y="0.102" />
@@ -86,15 +86,37 @@
       <Property Name="Docente" />
     </ShowAsAssociation>
   </Class>
+  <Class Name="BibliotecaSysacad.Examen">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAEAAAAAAAAAAAQAAAAAAAAAEAAAACA=</HashCode>
+      <FileName>Examen.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Especialidad" />
+      <Property Name="Estudiante" />
+      <Property Name="Materia" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BibliotecaSysacad.MesaDeExamen">
+    <Position X="3" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAEQAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>MesaDeExamen.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Materia" />
+    </ShowAsAssociation>
+  </Class>
   <Enum Name="TipoCursado">
-    <Position X="6.25" Y="0.5" Width="1.25" />
+    <Position X="7.75" Y="0.5" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEMAABAAAAAAE=</HashCode>
       <FileName>Enumerados.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="Turno">
-    <Position X="1.25" Y="3.25" Width="1.25" />
+    <Position X="1.5" Y="3.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAACBAAAA=</HashCode>
       <FileName>Enumerados.cs</FileName>
