@@ -9,13 +9,6 @@ namespace BibliotecaSysacad
     public class Docente : Persona
     {
         public List<Materia> MateriasACargo { get; set; }
-
-        public Materia Materia
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        public float Sueldo { get; set; }
     }
 }

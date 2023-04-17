@@ -12,6 +12,8 @@ namespace BibliotecaSysacad
         public int Horas { get; set; }
         public List<Materia> Correlativas { get; set; }
         public List<Docente> Docentes { get; set; }
+        public Examen Examen { get; set; }
+
 
         public TipoCursado TipoCursado
         {

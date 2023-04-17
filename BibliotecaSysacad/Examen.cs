@@ -6,18 +6,13 @@ using System.Threading.Tasks;
 
 namespace BibliotecaSysacad
 {
-    internal class Examen
+    public class Examen
     {
         public Materia Materia { get; set; }
         public string Fecha { get; set; }
-
         public float Nota { get; set; }
-
         public Carrera Especialidad { get; set; }
-
         public Estudiante Estudiante { get; set; }
-
-
 
     }
 }

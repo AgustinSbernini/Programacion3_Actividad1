@@ -26,5 +26,7 @@ namespace BibliotecaSysacad
             {
             }
         }
+
+        public Persona Ayudante { get; set; }
     }
 }
