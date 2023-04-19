@@ -11,8 +11,9 @@ namespace BibliotecaSysacad
         public Materia Materia { get; set; }
         public string Fecha { get; set; }
         public float Nota { get; set; }
-        public Carrera Especialidad { get; set; }
         public Estudiante Estudiante { get; set; }
+        public TipoDeExamen Instancia { get; set; }
+
 
     }
 }
