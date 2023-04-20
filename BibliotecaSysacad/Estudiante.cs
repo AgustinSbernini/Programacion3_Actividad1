@@ -11,7 +11,7 @@ namespace BibliotecaSysacad
         public Carrera CarreraEnCurso { get; set; }
         public List<Materia> MateriasAprobadas { get; set; }
         public List<Materia> MateriasInscriptas { get; set; }
-
+        public Usuario Usuario { get; set; }
         public Materia Materia
         {
             get => default;

@@ -10,5 +10,6 @@ namespace BibliotecaSysacad
     {
         public List<Materia> MateriasACargo { get; set; }
         public float Sueldo { get; set; }
+        public Usuario Usuario { get; set; }
     }
 }
