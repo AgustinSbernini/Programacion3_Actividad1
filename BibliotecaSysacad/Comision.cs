@@ -11,7 +11,7 @@ namespace BibliotecaSysacad
         public int HorarioInicio { get; set; }
         public int HorarioFin { get; set; }
 
-        public Turno Turno
+        public ETurno Turno
         {
             get => default;
             set

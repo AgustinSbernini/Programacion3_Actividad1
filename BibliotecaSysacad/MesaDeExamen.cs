@@ -14,11 +14,5 @@ namespace BibliotecaSysacad
         public Materia Materia { get; set; }
         public List<Estudiante> Estudiantes { get; set; }
 
-        public Avisos Aviso { get; set; }
-
-
-
-
-
     }
 }

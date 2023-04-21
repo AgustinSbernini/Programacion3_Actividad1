@@ -12,7 +12,7 @@ namespace BibliotecaSysacad
         public string Fecha { get; set; }
         public float Nota { get; set; }
         public Estudiante Estudiante { get; set; }
-        public TipoDeExamen Instancia { get; set; }
+        public ETipoDeExamen Instancia { get; set; }
 
 
     }

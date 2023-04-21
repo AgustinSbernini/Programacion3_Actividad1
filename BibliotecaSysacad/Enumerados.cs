@@ -1,3 +1,3 @@
-﻿public enum TipoCursado { Bimestral, Trimestral, Cuatrimestral, Semestral, Anual }
-public enum Turno { Mañana, Tarde, Noche }
-public enum TipoDeExamen { Parcial, Final }
+﻿public enum ETipoCursado { Bimestral, Trimestral, Cuatrimestral, Semestral, Anual }
+public enum ETurno { Mañana, Tarde, Noche }
+public enum ETipoDeExamen { Parcial, Final }

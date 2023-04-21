@@ -1,65 +1,55 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="BibliotecaSysacad.Carrera">
-    <Position X="0.75" Y="0.5" Width="1.75" />
-    <AssociationLine Name="Materia" Type="BibliotecaSysacad.Materia" FixedFromPoint="true">
-      <Path>
-        <Point X="2.5" Y="1.812" />
-        <Point X="3.292" Y="1.812" Type="JumpStart" />
-        <Point X="3.458" Y="1.812" Type="JumpEnd" />
-        <Point X="3.75" Y="1.812" />
-      </Path>
-    </AssociationLine>
+    <Position X="0.75" Y="0.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAACAAAAAAIAAACAgAAAAAQBAAAAIAAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAACAAAAAAIAAACAgAAAAAABAAAAIAAABAAAAAA=</HashCode>
       <FileName>Carrera.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Materia" />
-    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Materias" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="BibliotecaSysacad.Materia">
-    <Position X="3.75" Y="0.5" Width="1.5" />
+    <Position X="4.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>oAAQAAAACAAAAIAAAAAAAAAAAAAAAAAIQAAAAAAAIAA=</HashCode>
+      <HashCode>oAAQAAAACAAAAIAAAAAAAAAAAAAAAAAIQAAAAAAAAAA=</HashCode>
       <FileName>Materia.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="TipoCursado" />
       <Property Name="Comision" />
-      <Property Name="Docente" />
+      <Property Name="TipoCursado" />
+      <Property Name="Carrera" />
+      <Property Name="Examen" />
     </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Docentes" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="BibliotecaSysacad.Estudiante">
-    <Position X="7" Y="5.25" Width="1.75" />
-    <AssociationLine Name="Materia" Type="BibliotecaSysacad.Materia" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="7.437" Y="5.25" />
-        <Point X="7.437" Y="2.031" />
-        <Point X="5.25" Y="2.031" />
-      </Path>
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.185" Y="0.06" />
-      </MemberNameLabel>
-    </AssociationLine>
+    <Position X="8" Y="3.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAACAAAAAAAAAEAAAAAAAAAAQAAQAAAAAEAAAAAAA=</HashCode>
+      <HashCode>AAAAACAAAAAAAAAEAAAAAAAAAAAAAQAAAAAEAAAAAAA=</HashCode>
       <FileName>Estudiante.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Materia" />
       <Property Name="Usuario" />
+      <Property Name="CarreraEnCurso" />
     </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="MateriasAprobadas" />
+      <Property Name="MateriasInscriptas" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="BibliotecaSysacad.Persona">
-    <Position X="10.25" Y="0.5" Width="1.5" />
+    <Position X="9.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAEAAAAgAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Persona.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BibliotecaSysacad.Docente">
-    <Position X="11.75" Y="5.5" Width="1.5" />
+    <Position X="11.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAEQAAAAAA=</HashCode>
       <FileName>Docente.cs</FileName>
@@ -67,35 +57,66 @@
     <ShowAsAssociation>
       <Property Name="Usuario" />
     </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="MateriasACargo" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="BibliotecaSysacad.Comision">
     <Position X="4.5" Y="5.5" Width="1.5" />
-    <AssociationLine Name="Turno" Type="Turno">
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.102" Y="0.177" />
-      </MemberNameLabel>
-    </AssociationLine>
     <AssociationLine Name="Docente" Type="BibliotecaSysacad.Docente" ManuallyRouted="true">
       <Path>
         <Point X="5.25" Y="6.796" />
-        <Point X="5.25" Y="7.384" />
-        <Point X="11.375" Y="7.384" />
-        <Point X="11.375" Y="6.213" />
-        <Point X="11.75" Y="6.213" />
+        <Point X="5.25" Y="7.251" />
+        <Point X="10.138" Y="7.251" />
+        <Point X="10.138" Y="6.117" />
+        <Point X="11.5" Y="6.117" />
       </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.434" Y="-0.353" />
+      </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAhAAAMAA=</HashCode>
       <FileName>Comision.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Turno" />
       <Property Name="Docente" />
       <Property Name="Ayudante" />
+      <Property Name="Turno" />
     </ShowAsAssociation>
   </Class>
+  <Class Name="BibliotecaSysacad.MesaDeExamen">
+    <Position X="2.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAEQAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>MesaDeExamen.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Materia" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Estudiantes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BibliotecaSysacad.Aviso">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Avisos.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Autor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BibliotecaSysacad.Usuario">
+    <Position X="12" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAABAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Class Name="BibliotecaSysacad.Examen">
-    <Position X="0.5" Y="4.75" Width="1.5" />
+    <Position X="0.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAEAAAAAAAAAAAQAAAAAAAAAEAAAACA=</HashCode>
       <FileName>Examen.cs</FileName>
@@ -106,49 +127,22 @@
       <Property Name="Instancia" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="BibliotecaSysacad.MesaDeExamen">
-    <Position X="3" Y="7" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAGQAAAAQAAAAAAAAAAA=</HashCode>
-      <FileName>MesaDeExamen.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Materia" />
-    </ShowAsAssociation>
-  </Class>
-  <Class Name="BibliotecaSysacad.Avisos">
-    <Position X="13.25" Y="1.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAABA=</HashCode>
-      <FileName>Avisos.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Autor" />
-    </ShowAsAssociation>
-  </Class>
-  <Class Name="BibliotecaSysacad.Usuario">
-    <Position X="13.5" Y="4" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAIAAAAABAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Usuario.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Enum Name="TipoCursado">
-    <Position X="7.75" Y="0.5" Width="1.5" />
+  <Enum Name="ETipoCursado">
+    <Position X="7.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEMAABAAAAAAE=</HashCode>
       <FileName>Enumerados.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="Turno">
-    <Position X="1.5" Y="3.25" Width="1.5" />
+  <Enum Name="ETurno">
+    <Position X="7.25" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAACBAAAA=</HashCode>
       <FileName>Enumerados.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="TipoDeExamen" Collapsed="true">
-    <Position X="0.75" Y="6.75" Width="1.5" />
+  <Enum Name="ETipoDeExamen">
+    <Position X="0.5" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Enumerados.cs</FileName>

@@ -16,12 +16,5 @@ namespace BibliotecaSysacad
         public int CantidadMaterias { get { return Materias.Count; } }
         public List<string> Requisitos { get; set; }
 
-        public Materia Materia
-        {
-            get => default;
-            set
-            {
-            }
-        }
     }
 }

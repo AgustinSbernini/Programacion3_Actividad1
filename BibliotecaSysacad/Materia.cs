@@ -15,7 +15,7 @@ namespace BibliotecaSysacad
         public Examen Examen { get; set; }
 
 
-        public TipoCursado TipoCursado
+        public ETipoCursado TipoCursado
         {
             get => default;
             set
@@ -24,14 +24,6 @@ namespace BibliotecaSysacad
         }
 
         public Comision Comision
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public Docente Docente
         {
             get => default;
             set

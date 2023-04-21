@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BibliotecaSysacad
 {
-    public class Avisos
+    public class Aviso
     {
         public string Titulo { get; set; }
         public string Descripcion { get; set; }
